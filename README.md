@@ -1,6 +1,6 @@
 # React-folio
 
-The React-folio app allows users to create their own portfolio by choosing from a variety of customizable components created with React. It includes a dashboard where users can compile their components from a variety of options. The publish page then displays their finished product.
+The React-folio app allows users to create their own portfolio by choosing from a variety of customizable components created with React. It includes a dashboard where users can compile their components from a myriad of options. The publish page then displays their finished product.
 
 Link to live app: http://pacific-forest-54922.herokuapp.com/
 
