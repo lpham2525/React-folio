@@ -34,7 +34,7 @@ app.get('*', (req, res) => {
   res.sendFile(join(__dirname, 'client', 'build', 'index.html'))
 })
 
-require('mongoose').connect(process.env.MONGO_URI || process.env.LOCAL_URI, {
+require('mongoose').connect(process.env.MONGODB_URI || process.env.LOCAL_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
