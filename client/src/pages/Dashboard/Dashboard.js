@@ -146,6 +146,7 @@ const Dashboard = () => {
   useEffect(() => {
     getElements()
       .then(({ data }) => {
+        console.log(data)
         localStorage.setItem('userId', data[0].user._id)
         setElementState({ ...elementState, elements: data });
       })
