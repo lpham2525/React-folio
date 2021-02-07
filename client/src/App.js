@@ -14,7 +14,6 @@ import Publish from './pages/Publish'
 import Footer from './components/Footer'
 
 const App = () => {
-
   return (
     <Router>
       <div>
@@ -36,8 +35,8 @@ const App = () => {
           </Route>
         </Switch>
       </div>
-    </Router >
-  );
+    </Router>
+  )
 }
 
 export default App
