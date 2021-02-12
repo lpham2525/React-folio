@@ -24,7 +24,6 @@ const useStyles = makeStyles({
 });
 
 const UserCard = (props) => {
-
   const classes = useStyles();
 
   return (
@@ -43,7 +42,7 @@ const UserCard = (props) => {
             {props.cardBody}
           </Typography>
         </CardContent>
-      </CardActionArea >
+      </CardActionArea>
       <CardActions>
         <Button
           size="small"
@@ -55,8 +54,8 @@ const UserCard = (props) => {
           {props.cardButtonText}
         </Button>
       </CardActions>
-    </Card >
-  );
+    </Card>
+  )
 }
 
 export default UserCard

@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    margin: 'auto'
   },
 }));
 
@@ -21,7 +22,7 @@ const UserFooter = (props) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} >
+    <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
           <Typography
@@ -34,7 +35,7 @@ const UserFooter = (props) => {
         </Toolbar>
       </AppBar>
     </div>
-  );
+  )
 }
 
 export default UserFooter

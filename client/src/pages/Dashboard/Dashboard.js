@@ -130,18 +130,18 @@ const Dashboard = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+    setOpen(true)
+  }
   const handleDrawerClose = () => {
-    setOpen(false);
+    setOpen(false)
   };
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight)
 
   const [elementState, setElementState] = useState({
     elements: [],
     type: '',
-    attributes: {},
-  });
+    attributes: {}
+  })
 
   useEffect(() => {
     getElements()
@@ -197,12 +197,12 @@ const Dashboard = () => {
       .then(() => {
         const elements = JSON.parse(JSON.stringify(elementState.elements));
         const elementsFiltered = elements.filter(
-          (element) => element._id !== id
-        );
-        setElementState({ ...elementState, elements: elementsFiltered });
+          element => element._id !== id
+        )
+        setElementState({ ...elementState, elements: elementsFiltered })
       })
-      .catch((err) => console.error(err));
-  };
+      .catch((err) => console.error(err))
+  }
 
   let elementArray = (elementState.elements) ? elementState.elements : [];
   console.log(elementArray)
@@ -263,9 +263,10 @@ const Dashboard = () => {
             paper: clsx(
               classes.drawerPaper,
               !open && classes.drawerPaperClose
-            ),
+            )
           }}
-          open={open}>
+          open={open}
+        >
           <div className={classes.toolbar} />
           <Divider />
 
@@ -282,7 +283,6 @@ const Dashboard = () => {
             <FooterModal></FooterModal>
           </Container>
         </Drawer>
-
 
         <main className={classes.content}>
           <div className={classes.appBarSpacer} />
@@ -411,8 +411,7 @@ const Dashboard = () => {
                     {
                       (footer) ?
                         <UserFooter
-                          siteTitle={footer.attributes.siteTitle}
-                        ></UserFooter>
+                          siteTitle={footer.attributes.siteTitle}></UserFooter>
                         : null
                     }
                   </Typography>
@@ -422,9 +421,9 @@ const Dashboard = () => {
             <Box pt={4}></Box>
           </Container>
         </main>
-      </div  >
-    </ElementContext.Provider >
-  );
-};
+      </div>
+    </ElementContext.Provider>
+  )
+}
 
-export default Dashboard;
+export default Dashboard
